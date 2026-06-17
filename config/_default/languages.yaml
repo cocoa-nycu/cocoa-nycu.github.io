@@ -1,0 +1,46 @@
+en:
+  languageName: English
+  weight: 1
+  ### copyright (markdown can be used) ###
+  copyright: "Copyright &copy; {{< current_year >}} Computational Communication and AI Lab. All Rights Reserved. [Dot Org Theme](https://github.com/cncf/dot-org-hugo-theme) for Hugo by [CNCF](https://www.cncf.io)."
+  title: "Digicomlab"
+  description: "Site Description"
+  params:
+    ### accessibility ###
+    accessibility:
+      skip_text: "Skip to content"
+      help_text: "Accessibility Statement"
+      help_url: "/example-page/"
+    ### calls to action ###
+    main_cta:
+      # text: "Contact Us"
+      # link: "/example-page/"
+    footer_cta:
+    github_edit: "Edit this page on GitHub"
+  ### example menu showing children ###
+  menu:
+    main:
+    - identifier: "about"
+      name: "People"
+      url: "/about/"
+      weight: 1
+    - identifier: "events"
+      name: "Events"
+      url: "/events/"
+      weight: 2
+    - identifier: "training"
+      name: "Courses"
+      url: "/training/"
+      weight: 3  
+    - identifier: "research"
+      name: "Research"
+      url: "/research/"
+      weight: 4
+    # - identifier: "presentations"
+    #   name: "Presentations"
+    #   url: "/presentations/"
+    #   weight: 5
+    - identifier: "publications"
+      name: "Publications"
+      url: "/publications/"
+      weight: 6

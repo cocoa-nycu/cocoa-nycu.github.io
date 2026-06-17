@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{ .Content }}
+<div class="accordions">
+    {{ range .Pages }}
+    <div class="faq-item accordion">
+        <div>
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        </div>
+        <div>
+            {{ .Content }}
+        </div>
+    </div>
+    {{ end }}
+</div>
+{{ end }}

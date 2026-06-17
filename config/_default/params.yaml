@@ -1,0 +1,44 @@
+######################## custom scripts & styles ####################
+
+# Add custom assets relative to /static or via https
+logo_on_white: "/img/logo_hor.png"
+logo_on_black: ""
+custom_js: []
+custom_css:
+  - "/css/custom.css"
+
+
+
+
+######################## custom config ####################
+
+### default social share image (can also be set per lang) ###
+images: ["/img/social-share.png"]
+
+github:
+  repo_url: "https://github.com/cocoa-nycu/cocoa-nycu.github.io"
+  show_edit_link: true
+
+social_links:
+  devstats: ""
+  discord: ""
+  facebook: ""
+  flickr: ""
+  github: "https://github.com/cocoa-nycu/"
+  instagram: ""
+  landscape: ""
+  linkedin: ""
+  mastodon: ""
+  pinterest: ""
+  rss: ""
+  slack: ""
+  stackoverflow: ""
+  threads: ""
+  twitter: ""
+  x: ""
+  youtube: ""
+
+# Makes the header sticky on tall screens
+sticky_header: true
+# Enable search in header UI
+show_search: false

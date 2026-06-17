@@ -1,0 +1,7 @@
+/* Make header logo bigger */
+.navbar-brand img,
+.header-logo img,
+.logo img {
+  max-height: 72px;
+  width: auto;
+}

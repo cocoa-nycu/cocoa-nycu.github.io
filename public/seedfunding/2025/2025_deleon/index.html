@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboardr R package: An R package for accessible research visualization | Digicomlab</title>
+    <meta name="description" content="2025 By Ernesto de León, Fabio Votta, and Max Paulus This project investigates how dashboards can make research findings more accessible to non-experts, …" />
+
+    <link rel="preload" href="/fonts/nunito-v25-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/oswald-v49-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/nunito-v25-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/nunito-v25-latin-800.woff2" as="font" type="font/woff2" crossorigin>
+
+
+
+    
+
+
+<link rel="stylesheet" href="/css/styles.df6fcbecffc2e730fb4e9cb604d7680e8620a3939804b6e18b5cfb462a5fb86cf72a4c61f6b5a51b9a11c882985e864aadd401f7779501cb0fed092e9a0c56c8.css" integrity="sha512-32/L7P/C5zD7Tpy2BNdoDoYgo5OYBLbhi1z7RipfuGz3Kkxh9rWlG5oRyIKYXoZKrdQB93eVAcsP7QkumgxWyA==" media="all">
+<meta property="og:url" content="http://localhost:1313/seedfunding/2025/2025_deleon/">
+  <meta property="og:site_name" content="Digicomlab">
+  <meta property="og:title" content="dashboardr R package: An R package for accessible research visualization">
+  <meta property="og:description" content="2025 By Ernesto de León, Fabio Votta, and Max Paulus This project investigates how dashboards can make research findings more accessible to non-experts, journalists, policymakers, and the general public. While open-science initiatives have made datasets publicly available, technical barriers often prevent broader engagement. To address this, we develop dashboardr, an open-source R package that enables researchers with basic R skills to create professional, interactive dashboards with minimal technical effort. By transforming data into intuitive visual narratives, these dashboards bridge the gap between academic research and real-world impact, supporting transparency, outreach, and public engagement.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="seedfunding">
+    <meta property="article:published_time" content="1970-01-01T08:33:45+08:00">
+    <meta property="article:modified_time" content="1970-01-01T08:33:45+08:00">
+    <meta property="og:image" content="http://localhost:1313/img/social-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/img/social-share.png"><meta name="twitter:title" content="dashboardr R package: An R package for accessible research visualization">
+<meta name="twitter:description" content="2025 By Ernesto de León, Fabio Votta, and Max Paulus This project investigates how dashboards can make research findings more accessible to non-experts, journalists, policymakers, and the general public. While open-science initiatives have made datasets publicly available, technical barriers often prevent broader engagement. To address this, we develop dashboardr, an open-source R package that enables researchers with basic R skills to create professional, interactive dashboards with minimal technical effort. By transforming data into intuitive visual narratives, these dashboards bridge the gap between academic research and real-world impact, supporting transparency, outreach, and public engagement.">
+
+<meta property="article:published_time" content="1970-01-01" />
+
+<meta property="article:modified_time" content=" 1970-01-01" />
+
+
+<link rel="icon" href="http://localhost:1313/favicon.ico" sizes="32x32">
+
+
+<link rel="icon" type="image/svg+xml" href="http://localhost:1313/favicon.svg">
+
+
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png" />
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+
+  
+
+
+</head><body class="seedfunding page-page">
+<a class="skip-link" href="#content">Skip to content</a>
+
+
+
+<a class="skip-link" href="/example-page/">Accessibility Statement</a>
+
+
+
+  
+
+<header class="header sticky">
+    <div class="container wrap">
+
+        
+        <a class="logo-link" href="http://localhost:1313/">
+            <img class="logo" width="150" height="40" src="http://localhost:1313/img/digicom_logo.png" alt="Digicomlab">
+        </a>
+        
+        
+        
+        <nav class="main-menu">
+            <ul class="main-menu__wrapper">
+                
+                <li class="top-menu-item">
+                    <a href="/about/" class="menu-link">People</a>
+                    
+                </li>
+                
+                <li class="top-menu-item">
+                    <a href="/events/" class="menu-link">Events</a>
+                    
+                </li>
+                
+                <li class="top-menu-item">
+                    <a href="/projects/" class="menu-link">Research</a>
+                    
+                </li>
+                
+                <li class="top-menu-item menu-item-has-children">
+                    <a href="#" class="menu-link">Fundings</a>
+                    
+                    <div class="sub-menu">
+                        <ul class="sub-menu__nav">
+                            
+                            <li class="menu-item">
+                                <a href="/seedfunding/" class="menu-link">Seed Fundings
+                                    
+                                </a>
+                            </li>
+                            
+                            <li class="menu-item">
+                                <a href="/thesisgrant/" class="menu-link">Thesis Grant
+                                    
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    
+                </li>
+                
+            </ul>
+
+            <div class="main-menu__cta-language-wrapper">
+                
+
+                
+
+                
+
+                
+            </div>
+
+        </nav>
+        <button class="hamburger" type="button" aria-label="Toggle Menu">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        
+    </div>
+</header><section id="content" class="container wrap" data-pagefind-body>
+            
+                <header>
+                    <p class="breadcrumb"><a href="/seedfunding/">Seedfunding</a></p>
+                    <h1 class="title">dashboardr R package: An R package for accessible research visualization</h1>
+                </header>
+            
+            
+            <article class="content">
+            
+    <hr>
+<h6 id="2025">2025</h6>
+<h4 id="by-ernesto-de-león-fabio-votta-and-max-paulus">By Ernesto de León, Fabio Votta, and Max Paulus</h4>
+<p>This project investigates how dashboards can make research findings more accessible to non-experts, journalists, policymakers, and the general public. While open-science initiatives have made datasets publicly available, technical barriers often prevent broader engagement. To address this, we develop <strong>dashboardr</strong>, an open-source R package that enables researchers with basic R skills to create professional, interactive dashboards with minimal technical effort. By transforming data into intuitive visual narratives, these dashboards bridge the gap between academic research and real-world impact, supporting transparency, outreach, and public engagement.</p>
+<p>For this project, we are working closely with Alexandra Pafford, who supports us as a research assistant in the development of the package.</p>
+<p>Using the dashboard R package, <a href="https://www.digiqmonitor.nl/">a dashboard about the DigIQ monitor</a> was developed.</p>
+<p>Notable examples of dashboards that inspire this project include:</p>
+<ul>
+<li><a href="https://monitor.algosoc.org/en/">AlgoSoc’s AI Opinion Monitor</a> by Fabio Votta and Ernesto de León, which visualizes survey data on Dutch public opinion regarding AI.</li>
+<li><a href="https://www.campaigntracker.de/">CampAIgn Tracker</a> by Fabio Votta, which visualizes AI-generated content in political communication during the 2025 German election.</li>
+</ul>
+
+
+            
+            </article>
+            
+        </section><footer class="footer">
+    <div class="container wrap">
+
+        <div class="footer__menu-cta-wrapper">
+
+            <div class="footer__menu">
+                
+                
+
+                
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="column">
+                    <p class="top-menu-item">Fundings</p>
+                    <ul>
+                        
+                        <li class="menu-item">
+                            <a href="/seedfunding/" class="menu-link">Seed Fundings</a>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <a href="/thesisgrant/" class="menu-link">Thesis Grant</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                
+                
+                <div class="column no-children-links">
+                    <p class="top-menu-item">&nbsp;</p>
+                    <ul>
+                        
+                        <li class="menu-item">
+                            <a href="/about/" class="menu-link">People</a>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <a href="/events/" class="menu-link">Events</a>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <a href="/projects/" class="menu-link">Research</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+
+            
+        </div>
+
+        <div class="footer__logo-social-wrapper">
+            
+            <a class="logo-link" href="http://localhost:1313/">
+                <img loading="lazy" class="logo" width="150" height="40" src="http://localhost:1313/img/digicom_logo.png" alt="Digicomlab"></a>
+            
+
+
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+    <ul class="social-links">
+        
+        <li>
+            <a href="https://github.com/orgs/Digicomlab/" title="Digicomlab on Github">
+                <img loading="lazy" width="31" height="31" src="/img/social-icons/github.svg" alt="Github Icon">
+            </a>
+        </li>
+        
+    </ul>
+    
+
+</div>
+
+        <hr class="footer-hr">
+
+        <div class="copyright">
+            <p>Copyright © 2026 Digicomlab. All Rights Reserved. <a href="https://github.com/cncf/dot-org-hugo-theme">Dot Org Theme</a> for Hugo by <a href="https://www.cncf.io">CNCF</a>.</p>
+
+            <div class="copyright__accessibility-git-wrapper">
+                
+                <a href="/example-page/" class="nowrap">Accessibility Statement</a>
+                
+
+
+
+
+
+
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/orgs/Digicomlab//content/en/seedfunding/2025/2025_deleon.md" class="nowrap">
+    Edit this page on GitHub
+</a>
+
+
+
+</div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script defer src="http://localhost:1313/js/hoverintent.min.js"></script>
+
+
+
+
+
+
+
+<script defer src="http://localhost:1313/js/scripts.js"></script>
+
+
+
+
+
+</body>
+</html>

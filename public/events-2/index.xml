@@ -1,0 +1,20 @@
+<rss version="2.0">
+    <channel>
+        <title>Events on Digicomlab</title>
+        <link>http://localhost:1313/events-2/</link>
+        <description>Recent content in Digicomlab</description>
+
+         
+            
+                 
+                <item>
+                    <title>Dummy</title>
+                    <link>http://localhost:1313/events-2/urman/</link>
+                    <pubDate>Thu, 12 Sep 2024 00:00:00 -0700</pubDate>
+                    <description>Dummy Event</description>
+                </item>
+                
+            
+        
+    </channel>
+</rss>

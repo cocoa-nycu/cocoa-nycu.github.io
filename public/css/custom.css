@@ -1,0 +1,15 @@
+/* Make logo bigger and prevent header from clipping it */
+.navbar-brand,
+.header-logo,
+.logo {
+  height: 800;
+  max-height: none;
+}
+
+.navbar-brand img,
+.header-logo img,
+.logo img {
+  height: 200px;
+  max-height: none;
+  width: auto;
+}

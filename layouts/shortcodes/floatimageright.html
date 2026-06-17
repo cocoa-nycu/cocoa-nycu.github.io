@@ -1,0 +1,10 @@
+<!-- layouts/shortcodes/floatimageright.html -->
+<style>
+    .float-right {
+        float: right;
+        margin: 0 0 10px 10px; /* Adjust margins as needed */
+    }
+</style>
+
+<img class="float-right" src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" width="{{ .Get "width" }}" height="{{ .Get "height" }}">
+
